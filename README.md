@@ -74,6 +74,24 @@ python -m mcp_server.server
 
 This MCP server uses **STDIO** transport protocol. The service communicates via standard input/output streams.
 
+### MCP Server Config (for ModelScope / 魔搭社区)
+
+```json
+{
+  "mcpServers": {
+    "bilingual-video": {
+      "command": "python",
+      "args": ["-m", "mcp_server.server"],
+      "cwd": "<path-to-auto_bilingual_translation>",
+      "env": {
+        "PYTHONPATH": "<path-to-auto_bilingual_translation>",
+        "PYTHONIOENCODING": "utf-8"
+      }
+    }
+  }
+}
+```
+
 | Field | Value |
 |-------|-------|
 | **Transport** | STDIO |
