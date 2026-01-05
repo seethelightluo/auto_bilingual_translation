@@ -1,4 +1,12 @@
+# Core dependencies for video translation
 openai-whisper
 edge-tts
-ffmpeg-python
 tqdm
+
+# Translation model
+transformers
+torch
+sentencepiece
+
+# MCP server
+mcp>=1.0.0
