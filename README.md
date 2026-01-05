@@ -70,11 +70,23 @@ python -m mcp_server.server
 
 ---
 
-## STDIO Service Configuration
+## MCP Server Configuration
 
-This MCP server uses **STDIO** transport protocol. The service communicates via standard input/output streams.
+This MCP server uses **STDIO** transport protocol.
 
-### MCP Server Config (for ModelScope / 魔搭社区)
+### STDIO Configuration
+
+<!-- MCP_SERVER_CONFIG_START -->
+```json
+{
+  "command": "python",
+  "args": ["-m", "mcp_server.server"],
+  "transportType": "stdio"
+}
+```
+<!-- MCP_SERVER_CONFIG_END -->
+
+### Full Configuration Example (with environment)
 
 ```json
 {
