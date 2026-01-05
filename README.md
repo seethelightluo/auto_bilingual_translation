@@ -1,4 +1,4 @@
-# auto_bilingual_translation
+# auto_bilingual_translation 视频双语字幕
 
 End-to-end helper for adding bilingual (English → Chinese) subtitles and optional dubbed audio to videos using the `video-translator` tool.
 
